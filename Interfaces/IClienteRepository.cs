@@ -5,7 +5,7 @@ namespace Projeto1.interfaces{
         Task AtualizarAsync(Cliente cliente);
         Task ExcluirAsync(int id);
         Task IncluirAsync(Cliente cliente);
-        Task<IEnumerable<Cliente>> ListarTodosAsync();
+        Task<List<Cliente>> ListarTodosAsync();
         Task<Cliente?> ObterPorIdAsync(int id);
     }
    }
