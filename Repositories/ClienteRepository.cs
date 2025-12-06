@@ -1,5 +1,6 @@
 using Projeto1.Models;
 using Projeto1.interfaces;
+using Projeto1.Data;
 namespace Projeto.Repositories
 
 {
@@ -15,7 +16,7 @@ namespace Projeto.Repositories
         }
         public async Task<IEnumerable<Cliente>> ListarTodosAsync()
         {
-            return await _context.Clientes.ListarTodosAsync();
+            return await _context.Clientes.ToListAsync();
         }
         public async Task<Cliente?> ObterPorIdAsync(int id)
         {

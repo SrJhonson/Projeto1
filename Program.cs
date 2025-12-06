@@ -1,6 +1,15 @@
 using Projeto1.Components;
+using Microsoft.EntityFrameworkCore;
+using Projeto1.Data;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContextFactory<AppDbContext>(options =>
+    options.UseNpgsql(connectionString)
+);
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
