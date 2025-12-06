@@ -65,8 +65,9 @@
 @code {
 
     private string Titulo = "Formulario de Cadastro";
-    private string xNome;
-    private string xCep;
+    private string? xNome;
+    private string? xCep; 
+
     private void Enviar()
     {
         if (string.IsNullOrEmpty(xNome))
