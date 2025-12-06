@@ -1,0 +1,22 @@
+Repositório / Clean Architecture Resumo
+
+-Abstração do acesso a dados
+
+Os repositórios encapsulam a lógica de acesso a dados (como Entity Framework, Dapper, APIs externas), permitindo que o restante da aplicação não dependa diretamente da tecnologia usada para persistência.
+
+-Interface entre camadas
+
+Eles atuam como ponte entre a camada de domínio (regras de negócio) e a camada de infraestrutura (banco de dados, serviços externos), respeitando o princípio da inversão de dependência.
+
+-Facilitam testes unitários
+
+Como os repositórios são definidos por interfaces, é fácil criar mocks ou fakes para testes, sem precisar acessar o banco de dados real.
+
+-Promovem desacoplamento
+
+A lógica de negócio não precisa saber como os dados são armazenados ou recuperados. Isso permite trocar o mecanismo de persistência sem afetar o restante do sistema.
+
+Benefícios no Blazor Server com .NET 9
+-Performance otimizada com recursos do .NET 9
+-Melhor organização de código para aplicações interativas e escaláveis
+-Integração fluida com Mediator, CQRS e Dependency Injection
