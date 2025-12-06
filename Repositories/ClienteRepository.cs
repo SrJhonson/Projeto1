@@ -11,7 +11,7 @@ namespace Projeto.Repositories
 
         private readonly AppDbContext _context;
 
-        private ClienteRepository(AppDbContext context)
+        public ClienteRepository(AppDbContext context)
         {
             _context = context;
         }
