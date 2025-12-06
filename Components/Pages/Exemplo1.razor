@@ -10,7 +10,7 @@
 
         <div class="col-md-4">
             <label for="nomeInput" class="form-label">Nome:</label>
-            <input type="text" class="form-control" id="nomeInput" placeholder="Digite seu nome" />
+            <input type="text" @bind-value="xNome" class="form-control" id="nomeInput" placeholder="Digite seu nome" />
         </div>
 
         <div class="col-md-4">
@@ -36,7 +36,7 @@
         </div>
         <div class="col-md-4">
             <label for="CEPInput" class="form-label">CEP:</label>
-            <input type="text" class="form-control" id="CEPInput" placeholder="Digite seu CEP" />
+            <input type="text" @bind-value='xCep' class="form-control" id="CEPInput" placeholder="Digite seu CEP" />
         </div>
 
     </div>
@@ -65,9 +65,21 @@
 @code {
 
     private string Titulo = "Formulario de Cadastro";
-
+    private string xNome;
+    private string xCep;
     private void Enviar()
     {
+        if (string.IsNullOrEmpty(xNome))
+        {
+            Titulo = "Por favor, preencha o campo Nome.";
+            return;
+        }
+        if (string.IsNullOrEmpty(xCep))
+        {
+            Titulo = "Por favor, preencha o campo CEP.";
+            return;
+        }
+
         Titulo = "Formulario Enviado com Sucesso!";
         //StateHasChanged();
     }

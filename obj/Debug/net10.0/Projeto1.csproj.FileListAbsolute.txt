@@ -83,3 +83,4 @@ C:\Blazor9\Projeto1\obj\Debug\net10.0\refint\Projeto1.dll
 C:\Blazor9\Projeto1\obj\Debug\net10.0\Projeto1.pdb
 C:\Blazor9\Projeto1\obj\Debug\net10.0\Projeto1.genruntimeconfig.cache
 C:\Blazor9\Projeto1\obj\Debug\net10.0\ref\Projeto1.dll
+C:\Blazor9\Projeto1\obj\Debug\net10.0\Projeto1.sourcelink.json
