@@ -36,7 +36,7 @@ else
                         <a href="/clientes/edit/@item.Id" class="btn btn-sm btn-warning">Editar</a>
                     </td>
                     <td>
-                        <a href="/clientes/delete/@item.Id" class="btn btn-sm btn-danger">Deletar</a>
+                        <button type="button" class="btn btn-sm btn-danger" @onclick="@(() => DeletarCliente(item.Id))" >Deletar</button>
                     </td>
                 </tr>
             }
@@ -53,5 +53,9 @@ else
         listaClientes = await _clientRepository.ListarTodosAsync();
     }
 
-
+    private async Task DeletarCliente (int id)
+    {
+        await _clientRepository.ExcluirAsync(id);
+        listaClientes = await _clientRepository.ListarTodosAsync();
+    }
 }
