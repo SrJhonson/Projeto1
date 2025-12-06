@@ -42,6 +42,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFeGVtcGxvMi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Blazor9/Projeto1/Components/Pages/Exemplo3.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFeGVtcGxvMy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Blazor9/Projeto1/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

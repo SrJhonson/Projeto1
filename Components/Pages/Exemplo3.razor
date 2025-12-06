@@ -1,0 +1,88 @@
+@page "/Exemplo3"
+@rendermode InteractiveServer
+
+<h3>Exemplo-03: Variáveis</h3>
+<p>Este exemplo demonstra o uso de variaveis em um componente Blazor.</p>
+
+<button type="button" class="btn btn-danger" @onclick="IncrementarContador">Aumentar</button>
+
+<h3>Contador: @contador</h3>
+
+@if (ativo)
+{
+    <p>O contador foi incrementado!</p>
+}
+else
+{
+    <p>O Contador ainda não foi incrementado.</p>
+}
+
+<h4>Data de hoje: @hoje</h4>
+<h4>Data de hoje(PT-BR): @vencimento.ToString("dd/MM/yyyy")</h4>
+
+<h3>@fukuta.Id</h3>
+<h3>@fukuta.Nome</h3>
+<h3>@fukuta.Email</h3>
+<h3>@fukuta.Ativo</h3>
+
+
+@code {
+
+    private string mensagem = "Olá, Blazor!";
+    private int contador = 0;
+    private double valorDecimal = 3.14;
+    private decimal valorMonetario = 99.99M;
+    private bool ativo = false;
+    private char Letra = 'A';
+
+    private DateTime hoje = DateTime.Now;
+    private DateTime vencimento = new DateTime(2025, 10, 31);
+
+    private Cliente fukuta = new Cliente();
+    private Cliente silva = new Cliente(200,"João Silva");
+    private Cliente pereira = new Cliente(300,"Maria Pereira","mariapereira@hotmail.com");
+
+    private void IncrementarContador()
+    {
+        contador++;
+        ativo = true;
+        vencimento = hoje.AddMonths(contador);
+
+        fukuta.Id = contador;
+        fukuta.Nome = "Alessandro Fukuta";
+        fukuta.Email = "fukuta.email@outlook.com";
+        fukuta.Ativar();
+
+    }
+
+
+    private class Cliente
+    {
+        public int Id { get; set; }
+        public string? Nome { get; set; }
+        public string? Email { get; set; }
+        public bool Ativo {get;set;} = false;
+
+        public Cliente()
+        {
+
+        }
+        public Cliente(int id, string nome)
+        {
+            Id = id;
+            Nome = nome;
+        }
+
+        public Cliente(int id, string nome, string email)
+        {
+            Id = id;
+            Nome = nome;
+            Email = email;
+        }
+
+         public void Ativar(){
+            Ativo = true;
+         }
+
+    }
+}
