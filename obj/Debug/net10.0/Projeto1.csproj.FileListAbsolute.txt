@@ -71,8 +71,6 @@ C:\Blazor9\Projeto1\obj\Debug\net10.0\compressed\4w8hwvnraf-{0}-0j3bgjxly4-0j3bg
 C:\Blazor9\Projeto1\obj\Debug\net10.0\compressed\sg3u7cq443-{0}-13ja33weya-13ja33weya.gz
 C:\Blazor9\Projeto1\obj\Debug\net10.0\compressed\0acqlocxid-{0}-j8lzlu28q6-j8lzlu28q6.gz
 C:\Blazor9\Projeto1\obj\Debug\net10.0\compressed\v92r4eodqf-{0}-u1n4jc5v46-u1n4jc5v46.gz
-C:\Blazor9\Projeto1\obj\Debug\net10.0\compressed\hes68r6qb4-{0}-r3fx8vgq5i-r3fx8vgq5i.gz
-C:\Blazor9\Projeto1\obj\Debug\net10.0\compressed\bsafuucqoj-{0}-r3fx8vgq5i-r3fx8vgq5i.gz
 C:\Blazor9\Projeto1\obj\Debug\net10.0\staticwebassets.build.json
 C:\Blazor9\Projeto1\obj\Debug\net10.0\staticwebassets.build.json.cache
 C:\Blazor9\Projeto1\obj\Debug\net10.0\staticwebassets.development.json
@@ -84,3 +82,6 @@ C:\Blazor9\Projeto1\obj\Debug\net10.0\Projeto1.pdb
 C:\Blazor9\Projeto1\obj\Debug\net10.0\Projeto1.genruntimeconfig.cache
 C:\Blazor9\Projeto1\obj\Debug\net10.0\ref\Projeto1.dll
 C:\Blazor9\Projeto1\obj\Debug\net10.0\Projeto1.sourcelink.json
+C:\Blazor9\Projeto1\obj\Debug\net10.0\scopedcss\Components\Pages\Exemplo2.razor.rz.scp.css
+C:\Blazor9\Projeto1\obj\Debug\net10.0\compressed\hes68r6qb4-{0}-k2545vqwdt-k2545vqwdt.gz
+C:\Blazor9\Projeto1\obj\Debug\net10.0\compressed\bsafuucqoj-{0}-k2545vqwdt-k2545vqwdt.gz
